@@ -1,1 +1,47 @@
-#Package files
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "Production-ready scalable URL shortener with Node.js, PostgreSQL, and Redis",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand --forceExit",
+    "test:coverage": "jest --coverage --runInBand --forceExit",
+    "migrate": "node scripts/migrate.js",
+    "lint": "eslint src --ext .js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.3.7",
+    "pg": "^8.12.0",
+    "rate-limit-redis": "^4.2.0",
+    "winston": "^3.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"],
+    "setupFilesAfterFramework": [],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/server.js"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
