@@ -5,7 +5,6 @@ Build a fully working URL shortener that can handle high read/write traffic, sup
 
 <img width="2048" height="976" alt="image" src="https://github.com/user-attachments/assets/89149ac1-83a8-4e78-8755-3a90b8dbb1a8" />
 
-cat > /home/claude/url-shortener/README.md << 'README'
 # 🔗 URL Shortener — Production-Ready System Design Project
 
 A scalable URL shortening service built with **Node.js**, **PostgreSQL**, and **Redis** — fully containerised with Docker Compose. Designed as a resume-worthy system design project demonstrating real-world backend engineering practices.
