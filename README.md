@@ -479,6 +479,3 @@ Returns `503 Service Unavailable` if any dependency is down.
 MIT — free to use, fork, and extend.
 README
 echo "README done"
-Output
-
-README done
